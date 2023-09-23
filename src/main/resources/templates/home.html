@@ -3,12 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        button {
+            background-size: cover;
+            width: 400px;
+            height: 400px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
 <form th:action="@{/play}" method="post">
-    <button value="rock" name="input">Kő</button>
-    <button value="paper" name="input">Papír</button>
-    <button value="scissors" name="input">Ollók</button>
+    <button value="rock" style="background-image: url('/images/rock.jpg')" name="input"></button>
+    <button value="paper" style="background-image: url('/images/paper.png')" name="input"></button>
+    <button value="scissors" style="background-image: url('/images/scissors.jpg')" name="input"></button>
 </form>
 </body>
 </html>
